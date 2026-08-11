@@ -6,13 +6,14 @@
   <title>About · Brandon Keppinger</title>
   <link rel="stylesheet" href="assets/styles.css">
 </head>
+
 <body>
   <header class="site-header">
     <a class="site-title" href="index.html">Brandon Keppinger</a>
+
     <nav>
       <a href="about.html">About</a>
       <a href="projects.html">Projects</a>
-      <a href="blog/">Blog</a>
       <a href="mailto:bkeppinger@gmail.com">Contact</a>
     </nav>
   </header>
@@ -20,27 +21,46 @@
   <main class="container narrow">
     <p class="kicker">About</p>
     <h1>About me</h1>
+
     <p>
-      I’m an Honors Math student at the University of Notre Dame. I’m interested in number theory,
-      topology, machine learning, quantitative problem solving, and mathematical exposition.
+      I’m an Honors Mathematics student at the University of Notre Dame with
+      interests in computer science, artificial intelligence, physics, and
+      computational problem solving.
     </p>
+
     <p>
-      I like learning ideas deeply, turning them into clear notes, and building small projects that make
-      abstract concepts more visual and useful.
+      I’m especially interested in problems where mathematical and physical
+      ideas can be turned into working systems: implementing machine learning
+      algorithms, understanding how intelligent systems learn and reason, and
+      exploring applications in areas such as robotics. I enjoy learning ideas
+      from first principles and then testing that understanding by building
+      things myself.
+    </p>
+
+    <p>
+      Mathematics remains an important part of how I think, particularly through
+      my background in topology, analysis, algebra, and number theory. I’m
+      increasingly drawn to questions at the intersection of mathematics,
+      physics, computation, and experimentation, where theory can be connected
+      to systems that behave in the real world.
     </p>
 
     <h2>Interests</h2>
     <ul>
-      <li>Number theory, algebra, and topology</li>
-      <li>Mathematical visualization with Manim</li>
-      <li>Machine learning and AI systems</li>
-      <li>Problem solving, algorithms, and quantitative reasoning</li>
+      <li>Machine learning and artificial intelligence</li>
+      <li>Physics and physical systems</li>
+      <li>Robotics and intelligent systems</li>
+      <li>Algorithms, computation, and software</li>
+      <li>Mathematics and mathematical problem solving</li>
     </ul>
   </main>
 
   <footer class="footer">
     <p>© <span id="year"></span> Brandon Keppinger.</p>
   </footer>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

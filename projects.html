@@ -6,46 +6,53 @@
   <title>Projects · Brandon Keppinger</title>
   <link rel="stylesheet" href="assets/styles.css">
 </head>
+
 <body>
   <header class="site-header">
     <a class="site-title" href="index.html">Brandon Keppinger</a>
+
     <nav>
       <a href="about.html">About</a>
       <a href="projects.html">Projects</a>
-      <a href="blog/">Blog</a>
-      <a href="mailto:YOUR_EMAIL_HERE">Contact</a>
+      <a href="mailto:bkeppinger@gmail.com">Contact</a>
     </nav>
   </header>
 
   <main class="container narrow">
     <p class="kicker">Projects</p>
     <h1>Projects</h1>
-    <p>Selected projects and experiments. Replace the placeholder links with GitHub repos or writeups as they become ready.</p>
+    <p>Selected projects in machine learning, mathematics, and computation.</p>
 
     <div class="project-list">
-      <article class="project-card">
-        <h2>Manim mathematical animations</h2>
-        <p>Short animations explaining mathematical ideas, beginning with linear algebra and topology.</p>
-        <p><a href="#">Coming soon</a></p>
-      </article>
 
       <article class="project-card">
-        <h2>Math notes and expository writing</h2>
-        <p>Polished notes from REU work, number theory reading, Putnam practice, and probability/combinatorics.</p>
-        <p><a href="blog/">See blog</a></p>
+        <h2>Neural network from scratch</h2>
+        <p>
+          A 784–128–10 feedforward neural network implemented from scratch
+          in NumPy and trained on the MNIST handwritten-digit dataset,
+          reaching 93.8% test accuracy.
+        </p>
+        <p>
+          I implemented the forward pass, backpropagation, ReLU and sigmoid
+          activations, softmax, cross-entropy loss, and mini-batch stochastic
+          gradient descent without using a machine learning framework.
+        </p>
+        <p>
+          <a href="https://github.com/brandonkeppinger/neural-network-from-scratch">
+            View on GitHub
+          </a>
+        </p>
       </article>
 
-      <article class="project-card">
-        <h2>Chess AI bot</h2>
-        <p>Experiments with chess engines, search, evaluation, supervised learning, and reinforcement learning ideas.</p>
-        <p><a href="#">Coming soon</a></p>
-      </article>
     </div>
   </main>
 
   <footer class="footer">
     <p>© <span id="year"></span> Brandon Keppinger.</p>
   </footer>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
